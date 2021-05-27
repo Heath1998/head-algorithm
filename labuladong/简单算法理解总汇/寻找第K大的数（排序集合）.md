@@ -48,6 +48,8 @@ function partition(arr,left,right) {
 
 ##   最大堆找k值O(nlogk)
 
+> 也可能是O(klogn)但是k可能为n/2所以平均O(nlogn)
+
 其实就是建一个最大堆，然后再获取k次最大值，
 
 主要是思路是建立最大堆
