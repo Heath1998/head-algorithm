@@ -8,12 +8,14 @@
 
 
 
+记住要等于
+
 快排的`parition`思路要记得
 
 ```js
 // 因为真实遍历次数是n + n/2 + n/4 +...2;等比求和为2n即时间复杂度O（n）；
 function findMaxK(arr, k, left, right) {
-  if(left < right) {
+  if(left <= right) {
     let mid = partition(arr,left,right);
     console.log(arr);
     console.log(mid);
